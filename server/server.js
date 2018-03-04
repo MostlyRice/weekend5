@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const favoritesRouter = require('./routes/favorites-router');
+const favoriteRouter = require('./routes/favoriteRouter');
 
 
 /** ---------- MIDDLEWARE ---------- **/
@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 /** ---------- EXPRESS ROUTES ---------- **/
 // MATCH ROUTER NAMES WITH REQUIRED AS NEEDED FOR YOUR PROJECT
-app.use('/favorites', favoritesRouter);
+app.use('/favorites', favoriteRouter);
 
 /** ---------- MONGOOSE ------------ **/
 // CHANGE DATABASE NAME AS NEEDED FOR YOUR PROJECT
@@ -22,7 +22,7 @@ mongoose.connect(databaseUrl);
 
 /* ---------- OUTPUT FROM CONNECTION EVENTS ------------ */
 mongoose.connection.on('connected', () => {
-    console.log('Mongoose Locked and Loaded!');    
+    console.log('Mongoose working as intended by the MonGod');    
 });
 
 mongoose.connection.on('error', () => {
