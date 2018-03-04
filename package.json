@@ -1,7 +1,7 @@
 {
   "name": "mean_stack_solution",
   "version": "1.0.0",
-  "description": "This is a folder structure template that people can use to create skeleton for a MEAN stack solution. We assume you have the necessary prereq's installed and running on your machine(s) of choice before you use this template.",
+  "description": "SWAPI Project for Weekend Challanage",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
