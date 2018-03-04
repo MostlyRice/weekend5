@@ -20,6 +20,12 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-</body>
-</html>
+<body ng-app="myApp" md-colors="{background: 'default-background-hue-3'}">
+        <md-content md-colors="{background: 'default-background-hue-3'}">
+        <nav ng-include="'/views/nav.html'">
+        </nav>
+        <main ng-view>
+        </main>
+        </md-content>
+    </body md-colors="{background: 'default-background-hue-3'}">
+    </html>
