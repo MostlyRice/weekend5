@@ -11,6 +11,7 @@ myApp.service('SwapiService', ['$http', function($http) {
 
 
 	self.searchSwapi = (variable, keyword) => {
+		console.log('in search SWAPI');
 		$http.get('https://swapi.co/api/' + variable + '/?search='+ keyword)
 		.then((response) => {
 			self.searchResults.list = response.data.results;

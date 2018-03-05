@@ -12,15 +12,11 @@
   <option value="vehicles">Vehicles</option>
 </select>
 <p>{{sc.search.keyword}} {{sc.search.catergory}}</p>
-<button ng-click="sc.startSearch(sc.search.keyword, sc.search.catergory)">search</button>
+<button ng-click="sc.searchSwapi(sc.selectedVariable, sc.searchKeyword)">Search</button>
 
 </div>
 <div>
 <ul>
-  <li ng-repeat="result in sc.search.result.results">{{result.name}}</li>
+  <li ng-repeat="results in sc.searchResults.list"></li>
 </ul>
-<button ng-show="sc.search.result.previous"ng-click="sc.pageMove(sc.search.result.previous)">Previous</button>
-<button ng-show="sc.search.result.next"ng-click="sc.pageMove(sc.search.result.next)">Next</button>
-
-
 </div>
