@@ -7,7 +7,6 @@ const favoritesSchemaModule = require('../modules/schemaModule');
 let favoritesSchema = favoritesSchemaModule;
 let Favorite = mongoose.model('Favorite', favoritesSchema);
 
-// START GET ROUTE
 router.get('/', (req, res) => {
     Favorite.find({'favorited': 'true'}, (err, foundFavorites) => {
         if (err) {
@@ -19,9 +18,7 @@ router.get('/', (req, res) => {
         }
     })
 })
-// END GET ROUTE
 
-// START POST ROUTE
 router.post('/', (req, res) => {
     let favoriteToAdd = new Favorite(req.body);
 
@@ -35,9 +32,7 @@ router.post('/', (req, res) => {
         }
     })
 })
-// END POST ROUTE
 
-// START DELETE ROUTE
 router.delete('/:id', (req, res) => {
     let favoriteId = req.params.id;
     Favorite.findByIdAndRemove(
@@ -53,6 +48,5 @@ router.delete('/:id', (req, res) => {
         }
     )
 })
-// END DELETE ROUTE
 
 module.exports = router;

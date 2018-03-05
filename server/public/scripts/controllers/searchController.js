@@ -1,5 +1,5 @@
 myApp.controller("SearchController", ['SwapiService', function(SwapiService) {
-	console.log('SearchController locked and loaded!');
+	console.log('SearchController working as intended');
 	
 	const self = this;
 

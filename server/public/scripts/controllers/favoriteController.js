@@ -1,5 +1,5 @@
 myApp.controller("FavoritesController", ['SwapiService', function(SwapiService) {
-	console.log('FavoritesController locked and loaded!');
+	console.log('FavoritesController working as intended');
 	
 	const self = this;
 

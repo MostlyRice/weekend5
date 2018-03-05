@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Feora1343/mean_stack_solution.git"
+    "url": "git+https://github.com/Zygy93/weekend5.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Feora1343/mean_stack_solution/issues"
+    "url": "https://github.com/Zygy93/weekend5/issues"
   },
-  "homepage": "https://github.com/Feora1343/mean_stack_solution#readme",
+  "homepage": "hhttps://github.com/Zygy93/weekend5/README.md",
   "dependencies": {
     "angular": "^1.6.9",
     "angular-animate": "^1.6.9",
